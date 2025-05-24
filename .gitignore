@@ -1,0 +1,22 @@
+# Ambiente virtual
+venv/
+.env
+*.env
+
+# Arquivos do MySQL Workbench
+*.mwb.bak
+*.bak
+
+# Arquivos temporários
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
