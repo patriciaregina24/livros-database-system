@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-fbc02d?style=flat-square)
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
-![Feito com 💙 por Pati](https://img.shields.io/badge/feito%20com-%F0%9F%92%99%20por%20Pati-9c27b0?style=flat-square)
+![Feito com 💜 por Pati](https://img.shields.io/badge/feito%20com-%F0%9F%92%99%20por%20Pati-9c27b0?style=flat-square)
 
 📘 This project is also available in English: [README-en.md](./README-en.md)
 
