@@ -1,9 +1,14 @@
 # 📚 Sistema de Registro de Livros
-Modelagem e Implementação de Banco de Dados Relacional
+> 🎯 Projeto de modelagem e implementação de banco de dados relacional para gerenciamento de livros, autores, editoras e gêneros literários.
+
+![Status](https://img.shields.io/badge/status-finalizado-00c853?style=flat-square)
+![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
+![Feito com 💙 por Pati](https://img.shields.io/badge/feito%20com-%F0%9F%92%99%20por%20Pati-ff69b4?style=flat-square)
 
 📘 This project is also available in English: [README-en.md](./README-en.md)
 
-Este projeto consiste em um modelo de banco de dados para o gerenciamento de livros, autores, editoras e gêneros literários, com foco em eficiência e segurança na gestão de dados.
+---
 
 ## 🛠️ Tecnologias
 - **SQL**: Modelagem e manipulação dos dados.
@@ -11,12 +16,16 @@ Este projeto consiste em um modelo de banco de dados para o gerenciamento de liv
 - **MySQL (InnoDB)**: Sistema de gerenciamento de banco de dados utilizado na implementação, com suporte a integridade referencial.
 - **BrModelo**: Modelo conceitual (DER).
 
-## Análise de Requisitos
-A solução foi projetada com base em uma análise detalhada de requisitos, visando a criação de um sistema eficiente e bem estruturado.
-📄 Documento completo: [requisitos.pdf](./requisitos.pdf)
+---
 
-## Normalização
-O banco segue as boas práticas de normalização (1FN, 2FN, 3FN), garantindo a eliminação de redundâncias e a consistência dos dados.
+## 📄 Documentos do Projeto
+
+| Tipo                         | Arquivo                                                                 |
+|-----------------------------|-------------------------------------------------------------------------|
+| 📑 Requisitos do Sistema     | [`documentos/requisitos.pdf`](./documentos/requisitos.pdf)             |
+| 📘 Dicionário de Dados       | [`documentos/dicionario_de_dados.pdf`](./documentos/dicionario_de_dados.pdf) |
+
+---
 
 ## 🧱 Estrutura do Banco
 
@@ -29,32 +38,62 @@ O banco segue as boas práticas de normalização (1FN, 2FN, 3FN), garantindo a 
   - `autor_livro` 
   - `livro_genero`
  
-🔍 Consulte o [dicionário de dados completo (PDF)](./dicionario_de_dados.pdf)
+> 🧠 Segue as boas práticas de normalização (1FN, 2FN, 3FN)
 
-## Modelagem
-Inclui modelagem conceitual, lógica e física para garantir a integridade e a segurança dos dados.
+📘 Modelo lógico editável: [`sql/modelo_logico.mwb`](./sql/modelo_logico.mwb)
 
-- **Modelo Conceitual**  
-  ![Modelo Conceitual](./imagens/modelo_conceitual.png)
+---
 
-- **Modelo Lógico**  
-  ![Modelo Lógico](./imagens/modelo_logico.png)
+## 🧠 Modelagem
 
-## 🚀 Como Usar
+| Tipo                | Imagem |
+|---------------------|--------|
+| 🧩 Modelo Conceitual | ![Modelo Conceitual](./modelos/modelo_conceitual.png) |
+| 🧠 Modelo Lógico     | ![Modelo Lógico](./modelos/modelo_logico.png)         |
 
-1. Abra o MySQL Workbench.
-2. Execute o script `modelo_fisico.sql` incluído neste repositório.
-3. Pronto! O banco estará criado.
+---
+
+## 🧪 Scripts SQL
+
+| Finalidade                 | Arquivo                                               |
+|---------------------------|--------------------------------------------------------|
+| 🏗️ Criar estrutura         | [`sql/modelo_fisico.sql`](./sql/modelo_fisico.sql)    |
+| 📥 Inserir dados de exemplo| [`sql/insercao_dados.sql`](./sql/insercao_dados.sql)  |
+| 🔎 Consultas SQL           | [`sql/queries.sql`](./sql/queries.sql)                |
+
+---
+
+## 🚀 Como Executar
+
+1. Abra o **MySQL Workbench**
+2. Execute o script `modelo_fisico.sql` para criar as tabelas
+3. Execute `insercao_dados.sql` para popular o banco
+4. Explore as consultas no `queries.sql`
+
+---
 
 ## 🧠 Observações
 
-- É possível cadastrar um autor, gênero ou editora sem relacioná-los de imediato com livros.
-- Os relacionamentos N:N são resolvidos por tabelas associativas (`autor_livro` e `livro_genero`).
-- A integridade referencial garante consistência entre os dados.
+- É possível cadastrar autores, editoras e gêneros mesmo sem relacioná-los a livros imediatamente.
+- Os relacionamentos N:N são resolvidos por meio das tabelas associativas:
+  - `autor_livro`
+  - `livro_genero`
+- A integridade dos dados é garantida com o uso do **InnoDB**.
 
-## 💌 Contato
+---
+
+## 📬 Contato
 
 Este projeto foi criado com fins de aprendizado.  
 📬 Entre em contato para conversar sobre dados, projetos ou colaborações!
 
 📧 E-mail: [patiregina1350@gmail.com](mailto:patiregina1350@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**.  
+Sinta-se livre para estudar, modificar e reutilizar com os devidos créditos.
+
+---
