@@ -1,3 +1,49 @@
+/*
+  IMPORTANT NOTICE:
+  (PT-BR abaixo)
+
+  This file `insercao_dados.sql` contains direct INSERT commands to populate
+  the database only during the initial data load, meaning it should be run
+  **only once**.
+
+  After this initial load, all insertions, updates, and deletions must be done
+  via specific stored procedures created for this purpose,
+  which ensure data integrity and avoid duplication or inconsistencies.
+
+  Available procedures:
+    - Procedure for safe data insertion, which checks if records already exist
+      before adding (avoids duplication).
+    - Procedures for updating and deleting data, which handle modifications
+      in a controlled and safe manner.
+
+  Therefore, to maintain database quality and consistency:
+    - Use this file only for the initial data setup.
+    - Use the procedures for any subsequent CRUD operations.
+
+  ----------------------------------------------------------
+
+  AVISO IMPORTANTE:
+
+  Este arquivo `insercao_dados.sql` contém comandos INSERT diretos para popular
+  o banco de dados apenas na carga inicial, ou seja, deve ser executado
+  **uma única vez**.
+
+  Após essa primeira carga, todas as inserções, alterações e exclusões de dados
+  devem ser feitas por meio das procedures específicas criadas para isso,
+  que garantem a integridade e evitam duplicidades ou inconsistências.
+
+  Procedimentos disponíveis:
+    - Procedure para inserção segura de dados, que verifica se os registros já
+      existem antes de adicionar (evita duplicação).
+    - Procedures para alteração e exclusão de dados, que fazem a modificação
+      de forma controlada e segura.
+
+  Portanto, para manter a qualidade e consistência do banco:
+    - Use este arquivo apenas para a criação inicial dos dados.
+    - Use as procedures para qualquer operação posterior de CRUD.
+*/
+
+
 USE registro_livros;
 
 -- Inserindo autores

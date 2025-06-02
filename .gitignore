@@ -7,6 +7,9 @@ venv/
 *.mwb.bak
 *.bak
 
+# Arquivo SQL para testes
+sql/livros_teste.sql
+
 # Arquivos temporários
 *.log
 *.tmp
