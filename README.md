@@ -1,5 +1,5 @@
 # 📚 Sistema de Registro de Livros
-> 🎯 Projeto de modelagem e implementação de banco de dados relacional para gerenciamento de livros, autores, editoras e gêneros literários.
+> 🎯 Projeto de modelagem e implementação de banco de dados relacional com procedures para gerenciamento de livros, autores, editoras e gêneros literários.
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-fbc02d?style=flat-square)
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=flat-square)
@@ -59,6 +59,7 @@
 |---------------------------|--------------------------------------------------------|
 | 🏗️ Criar estrutura         | [`sql/modelo_fisico.sql`](./sql/modelo_fisico.sql)    |
 | 📥 Inserir dados de exemplo| [`sql/insercao_dados.sql`](./sql/insercao_dados.sql)  |
+| ⚙️ Procedures              | [`sql/procedures.sql`](./sql/procedures.sql)          |
 | 🔎 Consultas SQL           | [`sql/queries.sql`](./sql/queries.sql)                |
 
 ---
@@ -69,6 +70,7 @@
 2. Execute o script `modelo_fisico.sql` para criar as tabelas
 3. Execute `insercao_dados.sql` para popular o banco
 4. Explore as consultas no `queries.sql`
+5. Execute `procedures.sql` para criar as procedures armazenadas no banco
 
 ---
 
@@ -79,6 +81,10 @@
   - `autor_livro`
   - `livro_genero`
 - A integridade dos dados é garantida com o uso do **InnoDB**.
+- **Stored Procedures** foram implementadas para facilitar operações seguras como:
+  - Inserção de livros com validações de dados
+  - Atualização e exclusão controlada
+- Essas procedures garantem a integridade dos dados e simplificam o uso do banco por aplicações externas.
 
 ---
 
