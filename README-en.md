@@ -1,6 +1,6 @@
 # 📚 Book Registration System
 
-> 🎯 A relational database modeling and implementation project for managing books, authors, publishers, and literary genres.
+> 🎯 A relational database modeling and implementation project with procedures for managing books, authors, publishers, and literary genres.
 
 ![Status](https://img.shields.io/badge/status-in%20development-fbc02d?style=flat-square)
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=flat-square)
@@ -61,6 +61,7 @@
 |---------------------------|------------------------------------------------------|
 | 🏗️ Create structure        | [`sql/modelo_fisico.sql`](./sql/modelo_fisico.sql)  |
 | 📥 Insert sample data      | [`sql/insercao_dados.sql`](./sql/insercao_dados.sql)|
+| ⚙️ Procedures              | [`sql/procedures.sql`](./sql/procedures.sql)        |
 | 🔎 SQL Queries             | [`sql/queries.sql`](./sql/queries.sql)              |
 
 ---
@@ -71,6 +72,7 @@
 2. Run `modelo_fisico.sql` to create the tables
 3. Run `insercao_dados.sql` to populate the database
 4. Explore the sample queries in `queries.sql`
+5. Run `procedures.sql` to create the stored procedures in the database.
 
 ---
 
@@ -81,6 +83,10 @@
   - `autor_livro`
   - `livro_genero`
 - Data integrity is ensured using the **InnoDB** engine.
+- **Stored procedures** have been implemented to enable safe operations such as:
+  - Inserting books with data validation
+  - Controlled update and deletion
+- These procedures ensure data integrity and simplify database usage by external applications.
 
 ---
 
